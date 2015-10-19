@@ -1,0 +1,76 @@
+/* #UTILITIES
+-------------------------------------------------- */
+
+//  [Images]
+//  [Topography]
+//  [Grid]
+//  [Animation]
+
+
+//==================================================
+// #UTILITIES 
+//==================================================
+
+/* [Images]
+-------------------------------------------------- */
+// Icons 
+.u-icons {
+  background-image: url(../img/icons/sprite.svg);
+  background-repeat: no-repeat;
+}
+
+
+/* [Topography]
+-------------------------------------------------- */
+/*  Disable touch callout on mobile device */
+.u-no-callout {
+  -webkit-touch-callout: none;
+}
+
+/* Disable text selection highlighting */
+.u-no-select {
+  user-select: none;
+}
+
+/*  Text crop */
+.u-text-crop {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+/* [Grid]
+-------------------------------------------------- */
+/* Taking into account the size of borders and padding */
+.u-box-sizing {
+  box-sizing: border-box;
+}
+
+/* Fixed height for elements with float items */
+.u-clear-fixed {
+  &:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
+/* Float direction */
+.u-pull-right {
+  float: right;
+}
+.u-pull-left {
+  float: left;
+}
+
+/* [Animation]
+-------------------------------------------------- */
+.animation( @property, @speed ){
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: @speed;
+  transition-property: @property;
+
+  will-change: @property;
+  transform-style: preserve-3d;
+}

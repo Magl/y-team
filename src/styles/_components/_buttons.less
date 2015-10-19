@@ -1,0 +1,109 @@
+/*
+  #BUTTONS
+-------------------------------------------------- */
+
+// #DEFAULT STYLES
+// #FLAT BUTTONS
+//    [Default flat button]
+//      States
+// #FIELD BUTTONS
+//    [Default field button]
+//      States
+
+
+
+//==================================================
+// #DEFAULT STYLES
+//==================================================
+.bt {
+  display: inline-block;
+  font-family: @font-default;
+  font-size: @font-base;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  border-radius: 4px;
+  outline: 0;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+
+//==================================================
+// #FLAT BUTTON
+//==================================================
+
+// [Default flat button]
+//--------------------------------------------------
+.bt-flat:extend(.bt all) {
+  .animation(background-color, .3s);
+
+  min-width: 100px;
+  padding: 0 15px;
+  color: @primary-color;
+  border: 1px solid @primary-color;
+  background: transparent;
+  // States
+  //--------------------------------------------------
+  &:hover {
+    color: @accent-color;
+    border: 1px solid @accent-color;
+  }
+  &:active {
+    color: #fff;
+    border: 1px solid @accent-color;
+    background-color: @accent-color;
+  }
+}
+
+
+// [Small flat button]
+//--------------------------------------------------
+.bt-flat-small:extend(.bt all) {
+  font-size: 11px;
+  color: @primary-color;
+  text-transform: uppercase;
+  border: 1px solid @primary-color;
+  background-color: #fff;
+  // States
+  //--------------------------------------------------
+  &:hover {
+    background-color: rgba(84, 101, 126, .10);
+  }
+  &:active {
+    color: #fff;
+    background-color: @primary-color;
+  }
+}
+
+
+//==================================================
+// #FIELD BUTTON
+//==================================================
+
+// [Default field button]
+//--------------------------------------------------
+.bt-field:extend(.bt all) {
+  .animation(background-color, .3s);
+
+  height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: @primary-color;
+  // States
+  //--------------------------------------------------
+  &:hover {
+    background-color: #8493a8;
+  }
+  &:active {
+    background-color: #3a4b63 !important;
+  }
+}

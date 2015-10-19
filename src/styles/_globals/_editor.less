@@ -1,0 +1,108 @@
+/*
+  #BASIC ELEMENTS STYLES
+-------------------------------------------------- */
+
+// [Titles]
+// [Basic elements]
+// [Blockquotes]
+// [List items]
+// [Table]
+
+
+//==================================================
+// #ELEMENTS STYLE
+//==================================================
+
+// [Titles]
+//--------------------------------------------------
+h1,
+h2 {
+  font-family: @font-default;
+  color: @primary-text-color;
+}
+h1 {
+  margin: 10px 0 20px 0;
+  font-size: @font-large;
+  font-weight: 300;
+  line-height: @font-large * 1.5;
+  text-align: center;
+}
+h2 {
+  margin: 25px 0 25px 0;
+  font-size: @font-medium;
+  font-weight: 700;
+  line-height: @font-medium * 1.5;
+}
+
+// [Basic elements]
+//--------------------------------------------------
+p {
+  clear: both;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-family: @font-default;
+  color: @primary-text-color;
+}
+b,
+strong {
+  font-weight: 700;
+}
+a {
+  font: inherit;
+  color: @accent-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+hr {
+  margin: 35px 0;
+  border: 1px solid @hr-line-color;
+}
+
+// [Blockquotes]
+//--------------------------------------------------
+blockquote {
+  width: 75%;
+  margin: 30px auto;
+  font-family: @font-highlight;
+  font-size: @font-medium;
+  font-style: italic;
+  line-height: @font-medium * 1.5;
+  text-align: center;
+  color: @secondary-text-color;
+  p {
+    margin: 0;
+  }
+}
+
+// [List items]
+//--------------------------------------------------
+ol,
+ul {
+  padding-left: 35px;
+  font-family: @font-default;
+  color: @primary-text-color;
+}
+li {
+  padding-left: 5px;
+  font-family: @font-default;
+  line-height: @font-base * 1.2;
+}
+
+// [Table]
+//--------------------------------------------------
+table {
+  max-width: 100%;
+  margin: 35px 0;
+  font-family: @font-default;
+  color: @primary-text-color;
+  table-layout: fixed;
+}
+td,
+th {
+  padding: 5px 10px;
+  font-family: @font-default;
+  line-height: @font-base * 1.2;
+  border: 1px solid #9b9b9b;
+}
